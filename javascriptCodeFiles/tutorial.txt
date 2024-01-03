@@ -1,0 +1,7 @@
+1. to change the content: always use onclick="<function_name>";
+2. remember that element inside tag are string. so suppose you want to change the value of 
+string ( that represent a number), always use parseInt(document.getelementbyId(...).innerHTML);
+
+
+3. also, int is changed to string with .toString(), and it's important to convert things to string to be
+used in html code.
