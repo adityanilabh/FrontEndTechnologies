@@ -1,0 +1,88 @@
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    header for navigation links
+    <div class="header"></div>
+     here content like age calculator, mututal fund calculator will be displayed.
+    <div class="contentBody">
+    
+</div>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fixed Header Navigation</title>
+    <style>
+        /* CSS for fixed header */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        section {
+            margin-top: 50px; /* Ensure content appears below the fixed header */
+            padding: 20px;
+            display: none; /* Initially hide all content sections */
+        }
+        section.active {
+            display: block; /* Display the active content section */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" onclick="showContent('home')">Home</a>
+            <a href="#" onclick="showContent('about')">About</a>
+            <a href="#" onclick="showContent('services')">Services</a>
+            <!-- Add more navigation links as needed -->
+        </nav>
+    </header>
+    <section id="page-home" class="active">
+        <h1>Welcome to Home Page</h1>
+        <p>This is the home page content...</p>
+    </section>
+    <section id="page-about">
+        <h1>About Us</h1>
+        <p>About our company...</p>
+    </section>
+    <section id="page-services">
+        <h1>Our Services</h1>
+        <p>Details about the services we offer...</p>
+    </section>
+
+    <script>
+        function showContent(page) {
+            // Hide all content sections
+            document.querySelectorAll('section[id^="page"]').forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Show the selected content based on the clicked link
+            document.getElementById(`page-${page}`).classList.add('active');
+        }
+    </script>
+</body>
+</html>
