@@ -1,0 +1,18 @@
+this object folder will contains: 
+JS Array
+JS String
+JS Date
+JS Number
+JS Math
+JS Object
+JS Boolean
+JS JSON
+JS Map
+JS Set
+JS Atomics
+JS BigInt
+JS Promise
+JS Proxy
+JS Reflect
+JS WeakMap
+JS WeakSet
