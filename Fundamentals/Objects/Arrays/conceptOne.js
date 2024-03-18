@@ -61,3 +61,12 @@ We can iterate array and access array elements using for and forEach loop.
 
 */
 
+// Javascript array and object
+// javascript array use indexes as number
+// javascript object uses indexes as names.
+
+// How to recognise the type of array 
+// 1. By using Array.isArray()  method.
+// 2. By using instanceOf() method.
+
+
